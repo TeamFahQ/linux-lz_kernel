@@ -375,8 +375,8 @@ static int od_init(struct dbs_data *dbs_data)
 	}
 
 	dbs_data->sampling_down_factor = DEF_SAMPLING_DOWN_FACTOR;
-	dbs_data->ignore_nice_load = 0;
-	tuners->powersave_bias = default_powersave_bias;
+	dbs_data->ignore_nice_load = 1;
+	tuners->powersave_bias = 1;
 	dbs_data->io_is_busy = should_io_be_busy();
 
 	dbs_data->tuners = tuners;
