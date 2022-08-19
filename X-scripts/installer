@@ -22,15 +22,15 @@ read VERSION
 echo ${bldred}Sigining kernel
 cd ~/.keys
 
-sudo sbsign --key MOK.priv --cert MOK.pem /boot/vmlinuz-5.18.$VERSION-lz-xan1 --output /boot/vmlinuz-5.18.$VERSION-lz-xan1.signed
+sudo sbsign --key MOK.priv --cert MOK.pem /boot/vmlinuz-5.19.$VERSION-lz-xan1 --output /boot/vmlinuz-5.19.$VERSION-lz-xan1.signed
 
-sudo cp /boot/initrd.img-5.18.$VERSION-lz-xan1{,.signed}
+sudo cp /boot/initrd.img-5.19.$VERSION-lz-xan1{,.signed}
 echo signed ${txtrst}
 
 sudo update-grub
 
-sudo mv /boot/vmlinuz-5.18.$VERSION-lz-xan1{.signed,}
-sudo mv /boot/initrd.img-5.18.$VERSION-lz-xan1{.signed,}
+sudo mv /boot/vmlinuz-5.19.$VERSION-lz-xan1{.signed,}
+sudo mv /boot/initrd.img-5.19.$VERSION-lz-xan1{.signed,}
 sudo update-grub
 
 cd -

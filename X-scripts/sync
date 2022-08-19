@@ -1,7 +1,7 @@
 #!/bin/bash
 
-git fetch xan 5.18
-git pull xan 5.18
+git fetch xan 5.19
+git pull xan 5.19
 
 # Return to kernel menu
 zenity --question --text "Anything else?"
