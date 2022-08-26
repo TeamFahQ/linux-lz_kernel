@@ -2098,6 +2098,13 @@ static struct ctl_table vm_table[] = {
 		.proc_handler	= dirtytime_interval_handler,
 		.extra1		= SYSCTL_ZERO,
 	},
+    {
+		.procname  = "max_readahead",
+		.data    = &vm_max_readahead,
+		.maxlen    = sizeof(vm_max_readahead),
+		.mode    = 0644,
+		.proc_handler  = sysctl_vm_max_readahead_handler,
+	},
 	{
 		.procname	= "swappiness",
 		.data		= &vm_swappiness,
