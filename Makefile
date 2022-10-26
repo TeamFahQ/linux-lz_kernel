@@ -443,6 +443,7 @@ else
 HOSTCC	= gcc
 HOSTCXX	= g++
 endif
+
 HOSTRUSTC = rustc
 HOSTPKG_CONFIG	= pkg-config
 
@@ -1063,6 +1064,7 @@ KBUILD_CFLAGS	+= $(CC_AUTO_VAR_INIT_ZERO_ENABLER)
 ifdef CONFIG_CC_IS_CLANG
 # https://bugs.llvm.org/show_bug.cgi?id=45497
 KBUILD_CFLAGS	+= -enable-trivial-auto-var-init-zero-knowing-it-will-be-removed-from-clang
+endif
 endif
 endif
 
