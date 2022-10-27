@@ -1891,7 +1891,6 @@ static const struct ctl_table kern_table[] = {
 	},
 #endif
 };
-
 int __init sysctl_init_bases(void)
 {
 	register_sysctl_init("kernel", kern_table);
