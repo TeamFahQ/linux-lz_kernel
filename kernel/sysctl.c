@@ -1523,7 +1523,6 @@ static const struct ctl_table sysctl_subsys_table[] = {
 	},
 #endif
 };
-
 int __init sysctl_init_bases(void)
 {
 	register_sysctl_init("kernel", sysctl_subsys_table);
