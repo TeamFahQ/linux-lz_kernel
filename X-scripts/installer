@@ -14,7 +14,7 @@ cd $base
 echo $pass | sudo -S ls /tmp > /dev/null 2>&1
 sudo dpkg -i *.deb
 mv *.deb Installed
-rm linux-upstream_6.0
+rm linux-upstream_6.0*
 
 echo Signing kernel
 echo ${bldblu}${txtbld}Which version?${txtrst}
