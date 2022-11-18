@@ -6,7 +6,7 @@ bldblu=${txtbld}$(tput setaf 4) #  blue
 txtbld=$(tput bold)             # Bold
 txtrst=$(tput sgr0)             # Reset
 
-base=~/Android/kernels/linux
+base=/media/thomas/Dev/kernels/linux
 
 pass=$(zenity --password --title="sudo password prompt" --timeout=10);
 
@@ -26,8 +26,6 @@ sudo sbsign --key MOK.priv --cert MOK.pem /boot/vmlinuz-6.0.$VERSION-lz-xan1 --o
 
 sudo cp /boot/initrd.img-6.0.$VERSION-lz-xan1{,.signed}
 echo signed ${txtrst}
-
-sudo update-grub
 
 sudo mv /boot/vmlinuz-6.0.$VERSION-lz-xan1{.signed,}
 sudo mv /boot/initrd.img-6.0.$VERSION-lz-xan1{.signed,}
