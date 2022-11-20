@@ -27,9 +27,18 @@ sudo sbsign --key MOK.priv --cert MOK.pem /boot/vmlinuz-6.0.$VERSION-lz-xan1 --o
 sudo cp /boot/initrd.img-6.0.$VERSION-lz-xan1{,.signed}
 echo signed ${txtrst}
 
+sudo -v
+echo "Signing the following modules"
+for filename in /lib/modules/$(uname -r)/updates/dkms/*.ko; do
+    sudo /usr/src/linux-headers-$(uname -r)/scripts/sign-file sha256 ~/.keys/MOK.priv ~/.keys/MOK.der $filename
+    echo "$filename"
+done
+
+#Remove unsigned
 sudo mv /boot/vmlinuz-6.0.$VERSION-lz-xan1{.signed,}
 sudo mv /boot/initrd.img-6.0.$VERSION-lz-xan1{.signed,}
 sudo update-grub
+sudo update-initramfs -ck all
 
 cd -
 
