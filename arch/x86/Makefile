@@ -62,6 +62,10 @@ export BITS
 
 # More compiler optimizations
 ifdef CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE
+KBUILD_CFLAGS += -O2
+KBUILD_RUSTFLAGS += -Copt-level=2
+else ifdef
+CONFIG_CC_OPTIMIZE_FOR_HIGH_PERFORMANCE
 KBUILD_CFLAGS += -O3
 KBUILD_RUSTFLAGS += -Copt-level=3
 endif
