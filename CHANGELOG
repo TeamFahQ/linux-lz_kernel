@@ -1,3 +1,6 @@
+1cf363703184 Thomas Raines 2024-01-27 Merge branch '6.7' of https://gitlab.com/xanmod/linux into 6.7
+1c6232599520 Thomas Raines 2024-01-21 Merge branch '6.7' of https://gitlab.com/xanmod/linux into 6.7
+4ac9479e8ee1 Thomas Raines 2024-01-14 Update CHANGELOG:Inital lz tweaks
 948aceba1e37 Thomas Raines 2023-11-21 Fixup makefile and properly add -O3 optimzations
 951d2bec3b97 Thomas Raines 2023-11-03 LZ sysctl tweaks
 ef8d04173a29 Thomas Raines 2022-10-26 LZ Tweaks: Insane readahead tweak
