@@ -1,3 +1,6 @@
+5a325fdb84d8 Thomas Raines 2024-02-04 Fix dkms error with nvidia graphics drivers:ERROR: modpost: GPL-incompatible module nvidia.ko uses GPL-only symbol '__rcu_read_lock' ERROR: modpost: GPL-incompatible module nvidia.ko uses GPL-only symbol '__rcu_read_unlock'
+92fda1cffa4b Thomas Raines 2024-02-02 Merge branch '6.7' of https://gitlab.com/xanmod/linux into 6.7
+180a7ba9f045 Thomas Raines 2024-01-28 Update 6.7.2
 1cf363703184 Thomas Raines 2024-01-27 Merge branch '6.7' of https://gitlab.com/xanmod/linux into 6.7
 1c6232599520 Thomas Raines 2024-01-21 Merge branch '6.7' of https://gitlab.com/xanmod/linux into 6.7
 4ac9479e8ee1 Thomas Raines 2024-01-14 Update CHANGELOG:Inital lz tweaks
