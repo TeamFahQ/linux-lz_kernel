@@ -1,3 +1,5 @@
+b67a9d3f4a07 Thomas Raines 2024-05-03 Merge branch '6.8' of https://gitlab.com/xanmod/linux into 6.8
+2066ed082cfb Thomas Raines 2024-05-02 6.8.8
 be8e655e5a00 Thomas Raines 2024-04-30 Merge branch '6.8' of https://gitlab.com/xanmod/linux into 6.8
 50c4abbca83f Thomas Raines 2024-04-28 Update CHANGELOG:Inital lz tweaks
 4606b49b428b Thomas Raines 2023-11-21 Fixup makefile and properly add -O3 optimzations
