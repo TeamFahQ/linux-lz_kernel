@@ -1,0 +1,4 @@
+31c5f55a2680 Thomas Raines 2024-07-27 Fix localversioning
+6164d157b205 Thomas Raines 2023-07-16 Adding driver for NCT6687D Kernel module. Original author is Frederic BOLTZ https://github.com/Fred78290/nct6687d.
+b447a65f654d Thomas Raines 2024-06-06 Inital lz tweaks
+3e7b0d548fc2 Thomas Raines 2023-12-06 Add personal changelog
