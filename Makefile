@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0
 VERSION = 6
 PATCHLEVEL = 10
-SUBLEVEL = 3
+SUBLEVEL = 4
 EXTRAVERSION =
 NAME = Baby Opossum Posse
 
@@ -969,7 +969,7 @@ rustflags64-$(CONFIG_GENERIC_CPU)	+= -Ztune-cpu=generic
 KBUILD_RUSTFLAGS += $(rustflags64-y)
 
 ifdef CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE
-KBUILD_CFLAGS += -O3
+KBUILD_CFLAGS += -O2 $(call cc-option,-fmodulo-sched -fmodulo-sched-allow-regmoves)
 KBUILD_RUSTFLAGS += -Copt-level=2
 else ifdef CONFIG_CC_OPTIMIZE_FOR_SIZE
 KBUILD_CFLAGS += -Os
