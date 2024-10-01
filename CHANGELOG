@@ -1,3 +1,5 @@
+47ec63fb55de Thomas Raines 2024-10-01 Merge branch '6.11' of https://gitlab.com/xanmod/linux into 6.11
+c207f29f4b5d Thomas Raines 2024-09-30 6.11.0:Initial
 c68467d20666 Thomas Raines 2023-07-16 Adding driver for NCT6687D Kernel module. Original author is Frederic BOLTZ https://github.com/Fred78290/nct6687d.
 c175b798db02 Thomas Raines 2024-06-06 Inital lz tweaks
 12b9664e0105 Thomas Raines 2024-07-27 Fix localversioning
