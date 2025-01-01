@@ -132,7 +132,7 @@
 #include "internal.h"
 
 unsigned long vm_max_readahead = INITIAL_VM_MAX_READAHEAD;
-int sysctl_vm_max_readahead_handler(struct ctl_table *table, int write,
+int sysctl_vm_max_readahead_handler(const struct ctl_table *table, int write,
 void __user *buffer, size_t *length, loff_t *ppos)
 {
 	proc_doulongvec_minmax(table, write, buffer, length, ppos);
