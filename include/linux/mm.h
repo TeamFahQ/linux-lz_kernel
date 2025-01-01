@@ -3518,7 +3518,7 @@ extern vm_fault_t filemap_page_mkwrite(struct vm_fault *vmf);
 #define INITIAL_VM_MAX_READAHEAD  4096  /* kbytes */
 extern unsigned long vm_max_readahead;
 
-int sysctl_vm_max_readahead_handler(struct ctl_table *table, int write,
+int sysctl_vm_max_readahead_handler(const struct ctl_table *table, int write,
 	void __user *buffer, size_t *length, loff_t *ppos);
 
 extern unsigned long stack_guard_gap;
