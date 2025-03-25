@@ -1,3 +1,5 @@
+64687f137f56 Thomas Raines 2025-03-24 Merge branch '6.13' of https://gitlab.com/xanmod/linux into 6.13
+9944e4e32677 Thomas Raines 2025-03-19 6.13.7
 c70fd3664db6 Thomas Raines 2025-03-18 CPUFREQ:add default CPU_FREQ_DEFAULT_GOV_ONDEMAND
 7cc2938765c8 Thomas Raines 2025-01-01 readahea tweak:fix incompatible pointer type error
 02a2e0ef2382 Thomas Raines 2024-12-29 Update driver nct6687
