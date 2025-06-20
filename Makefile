@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0
 VERSION = 6
 PATCHLEVEL = 15
-SUBLEVEL = 2
+SUBLEVEL = 3
 EXTRAVERSION =
 NAME = Baby Opossum Posse
 
@@ -856,13 +856,13 @@ KBUILD_CFLAGS	+= -fno-delete-null-pointer-checks
 
 ifdef CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE
 KBUILD_CFLAGS += -O2
-# Perform swing modulo scheduling immediately before the first scheduling pass.
-# This pass looks at innermost loops and reorders their instructions by
-# overlapping different iterations.
-KBUILD_CFLAGS += $(call cc-option,-fmodulo-sched -fmodulo-sched-allow-regmoves)
+# Enable software pipelining (Swing Modulo Scheduling) for innermost loops.
+KBUILD_CFLAGS += $(call cc-option,-fmodulo-sched -fmodulo-sched-allow-regmoves) \
+		 $(call cc-option,-mllvm -enable-pipeliner)
 KBUILD_RUSTFLAGS += -Copt-level=2
 else ifdef CONFIG_CC_OPTIMIZE_FOR_SIZE
 KBUILD_CFLAGS += -Os
+KBUILD_CFLAGS += $(call cc-option,-mllvm -enable-pipeliner-opt-size)
 KBUILD_RUSTFLAGS += -Copt-level=s
 endif
 
@@ -1037,7 +1037,14 @@ export CC_FLAGS_FPU
 export CC_FLAGS_NO_FPU
 
 ifneq ($(CONFIG_FUNCTION_ALIGNMENT),0)
+# Set the minimal function alignment. Use the newer GCC option
+# -fmin-function-alignment if it is available, or fall back to -falign-funtions.
+# See also CONFIG_CC_HAS_SANE_FUNCTION_ALIGNMENT.
+ifdef CONFIG_CC_HAS_MIN_FUNCTION_ALIGNMENT
+KBUILD_CFLAGS += -fmin-function-alignment=$(CONFIG_FUNCTION_ALIGNMENT)
+else
 KBUILD_CFLAGS += -falign-functions=$(CONFIG_FUNCTION_ALIGNMENT)
+endif
 endif
 
 # arch Makefile may override CC so keep this after arch Makefile is included
