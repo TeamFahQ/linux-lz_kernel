@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 6.15.2 Kernel Configuration
+# Linux/x86 6.15.3 Kernel Configuration
 #
 CONFIG_CC_VERSION_TEXT="Debian clang version 19.1.7 (3)"
 CONFIG_GCC_VERSION=0
@@ -1055,6 +1055,7 @@ CONFIG_HAVE_GCC_PLUGINS=y
 CONFIG_FUNCTION_ALIGNMENT_4B=y
 CONFIG_FUNCTION_ALIGNMENT_16B=y
 CONFIG_FUNCTION_ALIGNMENT=16
+CONFIG_CC_HAS_SANE_FUNCTION_ALIGNMENT=y
 # end of General architecture-dependent options
 
 CONFIG_RT_MUTEXES=y
