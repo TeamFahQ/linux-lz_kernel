@@ -10,7 +10,7 @@ before_script:
   - export jobs=$((2*$(nproc))); echo $jobs
   - scripts/config --file $KCONFIG_CONFIG --set-str LOCALVERSION -x64v$isa --set-val X86_64_VERSION $isa
   - pvcmd="cat $KCONFIG_CONFIG | grep 'LOCALVERSION='" && export pv=$(eval $pvcmd | cut -d'"' -f2)
-  - export mvcmd="make -j$jobs KDEB_PKGVERSION='$lv$pv$xv-$rv~$dv.g$git' bindeb-pkg 2>&1 | tee ../build-$lv$pv$xv-$rv~$dv.g"$git"_amd64.log && xz -e9 ../build-*$pv*"
+  - export mvcmd="make -j$jobs LLVM=1 KDEB_PKGVERSION='$lv$pv$xv-$rv~$dv.g$git' bindeb-pkg 2>&1 | tee ../build-$lv$pv$xv-$rv~$dv.g"$git"_amd64.log && xz -e9 ../build-*$pv*"
   - export avcmd="mkdir -p assets/ && mv ../*$pv* assets/"
 
 variables:
@@ -30,11 +30,13 @@ variables:
   - eval $mvcmd && eval $avcmd
   artifacts:
     name: "$CI_JOB_NAME~$CI_COMMIT_SHORT_SHA"
+    expire_in: 2 weeks
+    when: always
     paths:
     - assets/
     exclude:
     - assets/*dbg*
-  timeout: 1h
+  timeout: 2h
 
 6.15 x64v3:
   tags: [saas-linux-xlarge-amd64]
@@ -47,8 +49,10 @@ variables:
   - eval $mvcmd && eval $avcmd
   artifacts:
     name: "$CI_JOB_NAME~$CI_COMMIT_SHORT_SHA"
+    expire_in: 2 weeks
+    when: always
     paths:
     - assets/
     exclude:
     - assets/*dbg*
-  timeout: 1h
+  timeout: 2h
