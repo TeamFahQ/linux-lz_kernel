@@ -467,7 +467,7 @@ flowoffload_tg(struct sk_buff *skb, const struct xt_action_param *par)
 	const struct xt_flowoffload_target_info *info = par->targinfo;
 	struct tcphdr _tcph, *tcph = NULL;
 	enum ip_conntrack_info ctinfo;
-	enum ip_conntrack_dir dir;
+	enum ip_conntrack_dir dir = IP_CT_DIR_ORIGINAL;
 	struct nf_flow_route route = {};
 	struct flow_offload *flow = NULL;
 	struct net_device *devs[2] = {};
