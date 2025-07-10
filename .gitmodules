@@ -1,0 +1,6 @@
+[submodule "nct6687d"]
+	path = nct6687d
+	url = https://github.com/TeamFahQ/nct6687d
+[submodule "drivers/hwmon/nct6687d"]
+	path = drivers/hwmon/nct6687d
+	url = https://github.com/TeamFahQ/nct6687d
