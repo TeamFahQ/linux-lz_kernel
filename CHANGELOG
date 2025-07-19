@@ -1,3 +1,5 @@
+42ec7f44b8e1 Thomas Raines 2025-07-19 Merge branch '6.15' of https://gitlab.com/xanmod/linux into 6.15
+e5f068d335e2 Thomas Raines 2025-07-12 6.15.6
 8641f6037c14 Thomas Raines 2025-07-11 nct6687-submodule:added .gitignore
 5d81e43f3fc9 Thomas Raines 2025-07-11 Merge branch '6.15' of https://gitlab.com/xanmod/linux into 6.15
 96f82d49121a Thomas Raines 2025-07-10 drivers/hwmon/nct6687:added the nct6687 as a submodule with it's own dir. This driver is maintained externally, and I am trying to keep authorship and commits as proper as I can.
