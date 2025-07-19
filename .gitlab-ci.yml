@@ -1,7 +1,7 @@
 image: $CI_REGISTRY_IMAGE/xanmod-toolchain:latest
 
 before_script:
-  - wget -O - https://dl.xanmod.org/${CI_CERTS_TOKEN}/certs2.tar.xz | tar -xvJ
+  - wget -O - https://dl.xanmod.org/${CI_ASSETS} | tar xvJ
   - export lv=$(make -s kernelversion)
   - export xv=$(cat localversion)
   - export rv=0
