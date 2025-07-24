@@ -7,6 +7,7 @@ variables:
   KCONFIG_CONFIG: CONFIGS/x86_64/config
   LLVM: 1
   CLANG_AUTOFDO_PROFILE: kernel.afdo
+  CLANG_PROPELLER_PROFILE_PREFIX: kernel
   jv: $((2*$(nproc)))
   gv: $(git rev-parse --short=7 HEAD)
   dv: $(git show -s --date=format:'%Y%m%d' --format=%cd)
