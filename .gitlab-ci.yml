@@ -1,23 +1,27 @@
 image: $CI_REGISTRY_IMAGE/xanmod-toolchain:latest
 
+variables:
+  DEBFULLNAME: Alexandre Frade
+  DEBEMAIL: kernel@xanmod.org
+  KDEB_CHANGELOG_DIST: bookworm
+  KCONFIG_CONFIG: CONFIGS/x86_64/config
+  LLVM: 1
+  CLANG_AUTOFDO_PROFILE: kernel.afdo
+  CLANG_PROPELLER_PROFILE_PREFIX: kernel
+  jv: $((2*$(nproc)))
+  gv: $(git rev-parse --short=7 HEAD)
+  dv: $(git show -s --date=format:'%Y%m%d' --format=%cd)
+  lv: $(make -s kernelversion)
+  xv: $(cat localversion)
+  rv: 0
+
 before_script:
   - wget -O - https://dl.xanmod.org/${CI_ASSETS} | tar xvJ
-  - export lv=$(make -s kernelversion)
-  - export xv=$(cat localversion)
-  - export rv=0
-  - export git=$(git rev-parse --short=7 HEAD)
-  - export dv=$(git show -s --date=format:'%Y%m%d' --format=%cd)
-  - export jobs=$((2*$(nproc))); echo $jobs
+  - echo $jobs
   - scripts/config --file $KCONFIG_CONFIG --set-str LOCALVERSION -x64v$isa --set-val X86_64_VERSION $isa
   - pvcmd="cat $KCONFIG_CONFIG | grep 'LOCALVERSION='" && export pv=$(eval $pvcmd | cut -d'"' -f2)
-  - export mvcmd="make -j$jobs LLVM=1 CLANG_AUTOFDO_PROFILE=kernel.afdo KDEB_PKGVERSION='$lv$pv$xv-$rv~$dv.g$git' bindeb-pkg 2>&1 | tee ../build-$lv$pv$xv-$rv~$dv.g"$git"_amd64.log && xz -e9 ../build-*$pv*"
+  - export mvcmd="make -j$jv KDEB_PKGVERSION=$lv$pv$xv-$rv~$dv.g"$gv" bindeb-pkg 2>&1 | tee ../build-$lv$pv$xv-$rv~$dv.g"$gv"_amd64.log && xz -e9 ../build-*$pv*"
   - export avcmd="mkdir -p assets/ && mv ../*$pv* assets/"
-
-variables:
-  DEBFULLNAME: "Alexandre Frade"
-  DEBEMAIL: "kernel@xanmod.org"
-  KDEB_CHANGELOG_DIST: "bookworm"
-  KCONFIG_CONFIG: "CONFIGS/x86_64/config"
 
 6.15 x64v2:
   tags: [saas-linux-xlarge-amd64]
