@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0
 VERSION = 6
 PATCHLEVEL = 15
-SUBLEVEL = 8
+SUBLEVEL = 9
 EXTRAVERSION =
 NAME = Baby Opossum Posse
 
@@ -1077,7 +1077,7 @@ endif
 
 # include additional Makefiles when needed
 include-y			:= scripts/Makefile.extrawarn
-include-y			+= scripts/Makefile.uarches
+include-$(CONFIG_X86)		+= scripts/Makefile.x86
 include-$(CONFIG_DEBUG_INFO)	+= scripts/Makefile.debug
 include-$(CONFIG_DEBUG_INFO_BTF)+= scripts/Makefile.btf
 include-$(CONFIG_KASAN)		+= scripts/Makefile.kasan
