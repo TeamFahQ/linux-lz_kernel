@@ -1,3 +1,5 @@
+6fe0f876a4ac Thomas Raines 2025-10-13 Merge branch '6.17' of https://gitlab.com/xanmod/linux into 6.17
+61be9e1c74f8 Thomas Raines 2025-10-10 6.17.1
 0197326cc982 Thomas Raines 2025-01-01 readahead tweak:fix incompatible pointer type error
 2996947ce526 Thomas Raines 2025-07-10 drivers/hwmon/nct6687:added the nct6687 submodule. This driver is maintained externally, and I am trying to keep authorship and commits as proper as I can.
 b022600e94ef Thomas Raines 2025-03-18 CPUFREQ:add default CPU_FREQ_DEFAULT_GOV_ONDEMAND
