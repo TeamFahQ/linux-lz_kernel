@@ -1,3 +1,6 @@
+aff8618589a9 Thomas Raines 2025-10-18 Merge branch '6.17' of https://gitlab.com/xanmod/linux into 6.17
+8bd14b91b8ff Thomas Raines 2025-10-14 6.17.2(2)-Changelog appears to be 1 commit behind. It is missing the current changelog update. Re-ran it after making some changes to the script. changelog.mk:Add a comment to show changelog is running
+25b4d37b182f Thomas Raines 2025-10-13 6.17.2
 6fe0f876a4ac Thomas Raines 2025-10-13 Merge branch '6.17' of https://gitlab.com/xanmod/linux into 6.17
 61be9e1c74f8 Thomas Raines 2025-10-10 6.17.1
 0197326cc982 Thomas Raines 2025-01-01 readahead tweak:fix incompatible pointer type error
