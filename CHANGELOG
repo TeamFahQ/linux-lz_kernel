@@ -1,3 +1,7 @@
+93b5fac30c5e Thomas Raines 2025-12-20 Merge branch '6.18' of https://gitlab.com/xanmod/linux into 6.18
+6659593e5512 Thomas Raines 2025-12-13 Merge branch '6.18' of https://gitlab.com/xanmod/linux into 6.18
+5d3fbb1fc5de Thomas Raines 2025-12-09 Remove displacement of driver nct6687
+f2d1c2b9abbc Thomas Raines 2025-12-06 6.18.0
 00bb23db5bfb Thomas Raines 2025-12-06 cpufreq_ondemand:Fix mismerge
 c3ba7e24f461 Thomas Raines 2025-01-01 readahead tweak:fix incompatible pointer type error
 dff90dcad5e2 Thomas Raines 2023-05-21 localversion:add lz flag
