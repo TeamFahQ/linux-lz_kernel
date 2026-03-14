@@ -1,12 +1,6 @@
-77e1eb1a000b Thomas Raines 2023-12-04 Merge branch '6.6' of https://gitlab.com/xanmod/linux into 6.6
-0be402ace8ec Thomas Raines 2023-11-28 Merge branch '6.6' of https://gitlab.com/xanmod/linux into 6.6
-a6877ee0dfd1 Thomas Raines 2023-11-21 Fixup makefile and properly add -O3 optimzations
-8c1885693712 Thomas Raines 2023-11-21 Merge branch '6.6' of https://gitlab.com/xanmod/linux into 6.6
-57b4b00d05f8 Thomas Raines 2023-11-19 cpugov:ondemand as default
-9f2619f419b0 Thomas Raines 2023-11-09 Merge branch '6.6' of https://gitlab.com/xanmod/linux into 6.6
-1a2ae6ea1890 Thomas Raines 2023-11-03 LZ sysctl tweaks
-c3c942275be5 Thomas Raines 2022-10-26 LZ Tweaks: Insane readahead tweak
-955b8cad0d12 Thomas Raines 2022-08-06 Tweak ondemand governor a bit more
-2919f2abba84 Thomas Raines 2023-05-21 localversion:add lz flag
-d94537ac0fb1 Thomas Raines 2020-01-23 Add O3 optimizations
-7fd64f136ac3 Thomas Raines 2023-07-16 Adding driver for NCT6687D Kernel module. Original author is Frederic BOLTZ https://github.com/Fred78290/nct6687d.
+9cf6aaf7d69b Thomas Raines 2026-03-14 LZ insane read-ahead tweaks rework. When merging 6.19.7 from source, auto-merge fixed a conflict that broke the kernel. Reworked read-ahaed tweaks around the updated files as oppose to the other way around. The easiest way for me, was to completely reset source and pick my changes back into the source code.
+5428afd0550a Thomas Raines 2025-03-18 CPUFREQ:add default CPU_FREQ_DEFAULT_GOV_ONDEMAND and tweak ondemand governor to be more aggressive
+cf8275517684 Thomas Raines 2023-05-21 localversion:add lz flag
+ff9e35d5f689 Thomas Raines 2023-11-03 LZ sysctl tweaks
+3778536656b4 Thomas Raines 2023-12-06 Add personal changelog
+3ddb312f3c15 Thomas Raines 2026-03-14 Adding nct6687 motherboard driver
