@@ -893,6 +893,13 @@ static const struct ctl_table util_sysctl_table[] = {
 		.extra1		= SYSCTL_ZERO,
 		.extra2		= SYSCTL_ONE_HUNDRED,
 	},
+    {
+		.procname  = "max_readahead",
+		.data    = &vm_max_readahead,
+		.maxlen    = sizeof(vm_max_readahead),
+		.mode    = 0644,
+		.proc_handler  = sysctl_vm_max_readahead_handler,
+	},
 };
 
 static int __init init_vm_util_sysctls(void)
