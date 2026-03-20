@@ -1,3 +1,5 @@
+5615513df364 Thomas Raines 2026-03-20 Merge branch '6.19' of https://gitlab.com/xanmod/linux into 6.19
+235049367dbe Thomas Raines 2026-03-16 6.19.8
 a69245dff6ef Thomas Raines 2026-03-16 Merge branch '6.19' of https://gitlab.com/xanmod/linux into 6.19
 426929f4d728 Thomas Raines 2026-03-14 6.19.7
 9cf6aaf7d69b Thomas Raines 2026-03-14 LZ insane read-ahead tweaks rework. When merging 6.19.7 from source, auto-merge fixed a conflict that broke the kernel. Reworked read-ahaed tweaks around the updated files as oppose to the other way around. The easiest way for me, was to completely reset source and pick my changes back into the source code.
