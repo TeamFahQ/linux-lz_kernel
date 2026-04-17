@@ -1,6 +1,6 @@
-9cf6aaf7d69b Thomas Raines 2026-03-14 LZ insane read-ahead tweaks rework. When merging 6.19.7 from source, auto-merge fixed a conflict that broke the kernel. Reworked read-ahaed tweaks around the updated files as oppose to the other way around. The easiest way for me, was to completely reset source and pick my changes back into the source code.
-5428afd0550a Thomas Raines 2025-03-18 CPUFREQ:add default CPU_FREQ_DEFAULT_GOV_ONDEMAND and tweak ondemand governor to be more aggressive
-cf8275517684 Thomas Raines 2023-05-21 localversion:add lz flag
-ff9e35d5f689 Thomas Raines 2023-11-03 LZ sysctl tweaks
-3778536656b4 Thomas Raines 2023-12-06 Add personal changelog
-3ddb312f3c15 Thomas Raines 2026-03-14 Adding nct6687 motherboard driver
+8f09ae6aea55 Thomas Raines 2026-03-14 Adding nct6687 motherboard driver
+b413a58ee2d6 Thomas Raines 2026-03-14 6.19.7
+2ff4a2c4d34c Thomas Raines 2025-03-18 CPUFREQ:add default CPU_FREQ_DEFAULT_GOV_ONDEMAND and tweak ondemand governor to be more aggressive
+981d9323137f Thomas Raines 2023-05-21 localversion:add lz flag
+207f7cc80ca0 Thomas Raines 2023-11-03 LZ sysctl tweaks
+3d5483ff2ab8 Thomas Raines 2023-12-06 Add personal changelog
