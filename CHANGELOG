@@ -1,3 +1,5 @@
+1503f78fd1a7 Thomas Raines 2026-04-23 Merge branch '7.0' of https://gitlab.com/xanmod/linux into 7.0
+36f6fae0623f Thomas Raines 2026-04-17 7.0.0
 8f09ae6aea55 Thomas Raines 2026-03-14 Adding nct6687 motherboard driver
 b413a58ee2d6 Thomas Raines 2026-03-14 6.19.7
 2ff4a2c4d34c Thomas Raines 2025-03-18 CPUFREQ:add default CPU_FREQ_DEFAULT_GOV_ONDEMAND and tweak ondemand governor to be more aggressive
