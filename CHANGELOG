@@ -1,3 +1,6 @@
+670c3db38ba5 Thomas Raines 2026-04-28 7.0.2
+f101d698064d Thomas Raines 2026-04-28 Merge branch '7.0' of https://gitlab.com/xanmod/linux into 7.0
+fec8355648fd Thomas Raines 2026-04-23 7.0.1
 1503f78fd1a7 Thomas Raines 2026-04-23 Merge branch '7.0' of https://gitlab.com/xanmod/linux into 7.0
 36f6fae0623f Thomas Raines 2026-04-17 7.0.0
 8f09ae6aea55 Thomas Raines 2026-03-14 Adding nct6687 motherboard driver
