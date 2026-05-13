@@ -1,3 +1,5 @@
+93a4f9640761 Thomas Raines 2026-05-12 Merge branch '7.0' of https://gitlab.com/xanmod/linux into 7.0
+6fd3b99c2752 Thomas Raines 2026-05-09 7.0.4
 39baf205ffe2 Thomas Raines 2026-05-09 nct6687:Fix path in Makefile
 b29bbae5489d Thomas Raines 2026-05-09 Merge branch '7.0' of https://gitlab.com/xanmod/linux into 7.0
 98272223156b Thomas Raines 2026-05-06 Build nct6687 module with kernel
