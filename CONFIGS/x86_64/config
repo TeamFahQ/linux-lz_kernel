@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 7.0.9 Kernel Configuration
+# Linux/x86 7.0.10 Kernel Configuration
 #
 CONFIG_CC_VERSION_TEXT="Debian clang version 21.1.8 (3~bpo13+2)"
 CONFIG_GCC_VERSION=0
@@ -6730,7 +6730,6 @@ CONFIG_VIDEO_RP1_CFE=m
 #
 # Sunxi media platform drivers
 #
-CONFIG_VIDEO_DW_MIPI_CSI2RX=m
 
 #
 # Texas Instruments drivers
