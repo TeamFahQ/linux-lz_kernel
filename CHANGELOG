@@ -1,3 +1,5 @@
+478b4a4df008 Thomas Raines 2026-06-20 Merge branch '7.0' of https://gitlab.com/xanmod/linux into 7.0
+f0cc327162a8 Thomas Raines 2026-06-11 7.0.1 v2
 bdc14c00f6bf Thomas Raines 2026-06-11 Merge branch 'main' of https://github.com/Fred78290/nct6687d
 4ae6aae44c77 Thomas Raines 2026-03-14 Bring back LZ insane read-ahead tweaks
 8aaaacddad18 Thomas Raines 2026-06-10 7.0.12
