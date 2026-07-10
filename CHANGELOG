@@ -1,4 +1,6 @@
-c257e8a64539 Thomas Raines 2026-06-30 7.1.2
+1c0d66dcc4c6 Thomas Raines 2026-07-10 Merge branch '7.1' of https://gitlab.com/xanmod/linux into 7.1
+e4190d0ec351 Thomas Raines 2026-06-30 update nct6687 module
+525c2466075b Thomas Raines 2026-06-30 7.1.2
 83ed51e790c5 Thomas Raines 2026-06-29 Merge branch '7.1' of https://gitlab.com/xanmod/linux into 7.1
 cb956625b5e0 Thomas Raines 2026-06-27 7.1.1
 d20116582ff8 Thomas Raines 2026-06-25 Build nct6687 motherboard driver
